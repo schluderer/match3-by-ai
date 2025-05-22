@@ -36,8 +36,7 @@ A classic single-player Match-3 puzzle on a fixed grid. Players swap two adjacen
 
 **Game Modes**
 
-1. **Endless Mode (High Score):** Play until no valid swaps remain (or optional timer). Aim for max points.
-2. **Level Mode (Target):** Predefined levels with goals (e.g. reach X points or clear N tiles in M moves). Win to advance or retry on failure. Difficulty ramps by raising targets or introducing more tile colors.
+**Endless Mode (High Score):** Play until no valid swaps remain (or optional timer). Aim for max points.
 
 ---
 
