@@ -24,14 +24,9 @@ Animations and effects are **simple and smooth**. When two tiles swap, animate t
 
 For input, prioritize **touchscreen friendliness**. Players tap one tile then tap an adjacent tile to swap; alternatively, dragging one tile over its neighbor should also trigger a swap. Controls should be intuitive with minimal learning curve: *“tap or drag to swap adjacent tiles”*. There are no menus or dialogs in active play, so all interactions happen directly on the grid or via simple buttons (like a back or pause button). Multi-touch isn’t required. The interface should run at a consistent frame rate with no lag, as smooth play is crucial for quick reactions. All tiles and UI elements should be sized so that they are easily tapped on a phone screen (roughly at least 40–50 px on mobile screens).
 
-**Win/Lose Conditions & Game Modes:** We propose two main modes:
+**Win/Lose Conditions:**
 
 * **Endless Mode (High Score):** The player continues making matches until no more legal swaps remain (or optionally until a timer runs out). There is no fixed goal; the aim is to achieve the highest score possible. The game ends when the board is locked (no match-3 can be made) or moves expire. This mode is “lose-on-run-out-of-moves.” Endless mode appeals to casual play and replayability.
-* **Level-Based Mode (Target Goals):** The game is divided into levels. Each level sets a specific target, such as reaching a certain score or clearing a set number of tiles, within a limited number of moves. For example, “clear 10 red tiles in 15 moves.” If the player meets the goal, they “win” the level and advance (perhaps with a short celebratory animation). If they run out of moves before meeting the target, they lose and may retry. Goals can vary by level (score target, tile collection, etc.), but stay simple since we have no special tile mechanics. Difficulty should **ramp up gradually**: start with easier targets and fewer moves, then increase targets or diversify tile colors as levels progress.
-
-By adding level goals, the game encourages strategic play and a sense of progression (players appreciate having a clear objective). Because there are no special power-ups or in-app purchases planned, keep progression purely in terms of scoring or level clearing; this balances fun without monetization pressures.
-
-**Level Design Consideration:** In target-based mode, each new level could introduce slight twists – for instance, additional tile colors (increasing puzzle variety) or slightly larger score requirements. Ensure each level is **solvable**; avoid deadlocked boards by designing initial layouts carefully. Optionally, to keep things fresh, future versions could add simple obstacles (e.g. locked tiles) but the initial design will remain classic match-3.
 
 ## Technical Guideline Document
 
