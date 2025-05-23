@@ -1,13 +1,52 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Desktop.
+# Match3 Game – Kotlin Multiplatform with Compose
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-    - `commonMain` is for code that’s common for all targets.
-    - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-      For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-      `iosMain` would be the right folder for such calls.
+A simple Match 3 game developed as a Kotlin Multiplatform project using Compose Multiplatform.  
+This project was ideated, documented, and implemented with AI tools including ChatGPT and Junie.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+|Desktop| iOS |
+|-|-|
+|![Desktop Demo](assets/desktop.webp)|![iOS Demo](assets/ios.webp)|
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## 🎮 Game Overview
+
+This is a basic Match 3 puzzle game designed for cross-platform deployment using Kotlin Multiplatform and Compose Multiplatform.  
+Players swap adjacent tiles to match three or more of the same type, which are then cleared from the board and replaced with new tiles.
+
+## 🧠 AI-Assisted Development
+
+The development process was only using AI tools to streamline design, architecture planning, and coding:
+
+### 📄 Documentation Generation with ChatGPT
+
+Initial documentation was created using the following prompts:
+
+**Prompt 1:**
+
+> I want to develop a simple Match3 game in Kotlin Multiplatform. Please create the following documents:
+> 
+> - A game design document which describes a simple version of the game
+> - A guideline document which sets technical boundaries regarding architecture
+> - A code style guide
+
+**Prompt 2:**
+
+> Update the documentation so that Compose Multiplatform is used instead of SwiftUI or native code
+
+
+The output from these prompts is available in the repository:
+- 📘 [`match3_documentation.md`](match3_documentation.md)
+
+### 🧑‍💻 Implementation with Junie AI
+
+Code was written and iteratively improved with Junie using prompts such as:
+
+- `Implement the game according to this documentation. If you are unsure at certain topics you can ask me.`
+- `If I launch the app, all tiles are displayed in the top left corner of the game board.`  
+  (Troubleshooting layout issues.)
+- `Add tests for the Board` (with `Board.kt` as context)
+
+Animation support was also attempted via several prompts, but no satisfying results were achieved — possibly due to late-night coding fatigue. 😄
+
+---
+
+Created with AI collaboration and Kotlin ❤️
